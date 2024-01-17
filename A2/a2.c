@@ -29,7 +29,8 @@ void test(short int x, char y, char z, short v) {
         "\t mov %0, ax       # ax --> v"
 
         : "=m" (v_as)                
-        : "m" (x), "m" (y), "m" (z)  
+        : "m" (x), "m" (y), "m" (z) 
+        : "%eax", "%ebx"
     );
 
     v_c = ((short)y * x - 4) / ((short) z - 2.0) - 2;
