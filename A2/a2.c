@@ -2,7 +2,7 @@
 
 int testCounter = 1;
 
-void test(short int x, char y, char z, short v) {
+void test(short x, char y, char z, short v) {
     printf("\n");
 
     short v_c, v_as;
